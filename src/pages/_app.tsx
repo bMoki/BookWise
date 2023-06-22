@@ -11,7 +11,7 @@ const nunitoSans = Nunito_Sans({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={nunitoSans.variable}>
+    <main className={`bg-gray-800 h-screen font-sans ${nunitoSans.variable}`}>
       <Component {...pageProps} />
     </main>
   )
