@@ -5,7 +5,7 @@ export const ratings = [
     // id: uuidv4(),
     rate: 4,
     description:
-      'Nec tempor nunc in egestas. Euismod nisi eleifend at et in sagittis. Penatibus id vestibulum imperdiet a at imperdiet lectus leo. Sit porta eget nec vitae sit vulputate eget',
+      'O Hobbit conta a história de Bilbo Bolseiro, um Hobbit pacato e satisfeito cuja vida vira de cabeça para baixo quando ele se junta ao mago Gandalf e a treze anões em sua jornada para reaver um tesouro roubado. É uma viagem repleta de perigos – e no fim Bilbo encara sozinho o guardião do tesouro, o mais terrível dragão de toda a Terra-Média. O Hobbit, prelúdio fascinante de J. R. R. Tolkien ao Senhor dos Anéis, é um dos livros mais adorados de todos os tempos. Cuidadosamente condensada e ilustrada, esta versão em quadrinhos tornou-se por si só um best-seller clássico',
     book_id: '375948a7-bca3-4b59-9f97-bfcde036b4ca',
     user_id: '48e458c0-8b1e-4994-b85a-1e1cfcc9dd60',
   },

@@ -1,4 +1,4 @@
-import * as RAvatar from '@radix-ui/react-avatar'
+import Image from 'next/image'
 
 interface Props {
   src: string
@@ -8,15 +8,18 @@ interface Props {
 
 export function Avatar({ alt, fallback, src }: Props) {
   return (
-    <RAvatar.Root className="inline-flex items-center justify-center align-middle overflow-hidden w-10 h-10 rounded-full">
-      <RAvatar.Image
-        className="w-full h-full object-cover rounded-full"
-        src={src}
-        alt={alt}
-      />
-      <RAvatar.Fallback className="h-full w-full flex item-center justify-center text-purple-100 text-md">
-        {fallback}
-      </RAvatar.Fallback>
-    </RAvatar.Root>
+    <div className="flex  rounded-full w-11 h-11 bg-gradient-to-b from-green-100 to-purple-100 justify-center items-center">
+      <div className="inline-flex items-center justify-center align-middle overflow-hidden w-10 h-10 rounded-full relative">
+        <figure className="w-full h-full rounded-full overflow-hidden absolute">
+          <Image
+            src={src}
+            alt={alt}
+            fill={true}
+            className="object-cover"
+            sizes="(max-width: 40px)"
+          />
+        </figure>
+      </div>
+    </div>
   )
 }

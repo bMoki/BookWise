@@ -3,5 +3,5 @@ interface Props {
 }
 
 export function Subtitle({ text }: Props) {
-  return <h5 className="text-gray-400 text-sm leading-base">{text}</h5>
+  return <h6 className="text-gray-400 text-sm leading-base">{text}</h6>
 }
