@@ -32,6 +32,7 @@ module.exports = {
       lg: '1.125rem',
       xl: '1.25rem',
       '2xl': '1.5rem',
+      '4xl': '2.25rem',
     },
 
     fontWeight: {
@@ -51,12 +52,14 @@ module.exports = {
       black: '#000000',
 
       green: {
+        50: '#7FD1CC',
         100: '#50B2C0',
         200: '#255D6A',
         300: '#0A313C',
       },
 
       purple: {
+        50: '#9694F5',
         100: '#8381D9',
         200: '#2A2879',
       },
@@ -72,8 +75,7 @@ module.exports = {
         800: '#0E1116',
       },
 
-      'gradient-vertical': `linear-gradient(180deg, #7FD1CC 0%, #9694F5 100%)`,
-      'gradient-horizontal': `linear-gradient(90deg, #7FD1CC 0%, #9694F5 100%)`,
+      transparent: 'transparent',
     },
     extend: {
       fontFamily: {
