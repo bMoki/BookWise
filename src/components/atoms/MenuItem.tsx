@@ -1,11 +1,11 @@
 import clsx from 'clsx'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { ReactNode } from 'react'
+import { Icon, IconsFromStyleGuide } from './Icon'
 
 interface Props {
   href: string
-  icon: ReactNode
+  icon: IconsFromStyleGuide
   label: string
 }
 
@@ -27,7 +27,7 @@ export function MenuItem({ label, href, icon }: Props) {
           'bg-transparent': !isAtPath,
         })}
       />
-      {icon}
+      <Icon icon={icon} size={24} />
       <h6
         className={clsx('leading-base text-md', {
           'text-gray-100 font-bold': isAtPath,

@@ -1,5 +1,5 @@
-import { Star, StarHalf } from '@phosphor-icons/react'
 import { MouseEvent, useState } from 'react'
+import { Icon } from './atoms/Icon'
 
 interface Props {
   rating: number
@@ -41,29 +41,18 @@ export function Rating({ readOnly = true, ...props }: Props) {
       onClick={handleSelectRating}
     >
       {stars.map((fill, i) => {
-        if (halfStar === i) {
-          return (
-            <StarHalf
-              onMouseOver={determineRating}
-              size={16}
-              key={i}
-              weight="fill"
-              className="text-purple-100"
-              data-key={i + 1}
-            />
-          )
-        } else {
-          return (
-            <Star
-              onMouseOver={determineRating}
-              size={16}
-              key={i}
-              weight={fill ? 'fill' : 'regular'}
-              className="text-purple-100"
-              data-key={i + 1}
-            />
-          )
-        }
+        const isHalfStar = halfStar === i
+        return (
+          <Icon
+            icon={isHalfStar ? 'StarHalf' : 'Star'}
+            onMouseOver={determineRating}
+            size={16}
+            key={i}
+            weight={fill || isHalfStar ? 'fill' : 'regular'}
+            className="text-purple-100"
+            data-key={i + 1}
+          />
+        )
       })}
     </div>
   )

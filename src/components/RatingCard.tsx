@@ -20,7 +20,7 @@ export function RatingCard() {
             <Subtitle text="Hoje" />
           </div>
         </div>
-        <Rating rating={4} />
+        <Rating rating={4.5} />
       </div>
 
       <div

@@ -1,6 +1,6 @@
-import { Binoculars, ChartLineUp, SignIn } from '@phosphor-icons/react'
 import { Logo } from './atoms/Logo'
 import { MenuItem } from './atoms/MenuItem'
+import { Icon } from './atoms/Icon'
 
 function SidebarEffects() {
   return (
@@ -55,16 +55,12 @@ export function Sidebar() {
       <div className="flex flex-col gap-16 justify-center pt-10 pb-6 h-full">
         <Logo />
         <div className="flex flex-col gap-4 h-full">
-          <MenuItem href="/" label="Inicio" icon={<ChartLineUp size={24} />} />
-          <MenuItem
-            href="/explore"
-            label="Explorar"
-            icon={<Binoculars size={24} />}
-          />
+          <MenuItem href="/" label="Inicio" icon="ChartLineUp" />
+          <MenuItem href="/explore" label="Explorar" icon="Binoculars" />
           <div className="mt-auto flex justify-center items-center text-gray-200 leading-base font-bold text-md  ">
             <button className="flex gap-3 justify-center items-center hover:bg-gray-200 hover:bg-opacity-5 p-1 rounded-sm">
               Fazer login
-              <SignIn size={20} className="text-green-100" />
+              <Icon icon="SignIn" size={20} className="text-green-100" />
             </button>
           </div>
         </div>
