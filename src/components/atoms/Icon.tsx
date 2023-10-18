@@ -18,6 +18,7 @@ export type IconsFromStyleGuide =
   | 'PencilSimpleLine'
   | 'UserList'
   | 'CaretLeft'
+  | 'MagnifyingGlass'
 
 interface Props extends PhosphorIcons.IconProps {
   icon: IconsFromStyleGuide

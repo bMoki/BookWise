@@ -50,7 +50,7 @@ function SidebarEffects() {
 
 export function Sidebar() {
   return (
-    <aside className="sticky top-4 overflow-hidden m-4 bg-gray-700 w-[232px] rounded-md h-[calc(100vh_-_32px)]">
+    <aside className="sticky top-4 overflow-hidden m-4 bg-gray-700 w-[232px] min-w-[232px] rounded-md h-[calc(100vh_-_32px)]">
       <SidebarEffects />
       <div className="flex flex-col gap-16 justify-center pt-10 pb-6 h-full">
         <Logo />
